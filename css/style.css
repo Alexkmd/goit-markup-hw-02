@@ -4,10 +4,15 @@ body {
   height: 1880px;
   background: #ffffff;
 }
-.link {
+a {
   text-decoration: none;
+  /* Убираем подчеркивание в сылках */
 }
-
+li {
+  list-style-type: none;
+  /* Убираем маркеры */
+}
+/* Section nav with logo */
 .maine-webstudio {
   position: absolute;
   width: 1600px;
@@ -23,7 +28,7 @@ body {
   height: 31px;
   left: 215px;
   top: 24px;
-  font-family: Raleway;
+
   font-style: normal;
   font-weight: bold;
   font-size: 26px;
@@ -41,7 +46,14 @@ body {
   height: 16px;
   left: 453px;
   top: 32px;
-  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  color: #212121;
+}
+.maine-nav {
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -55,12 +67,6 @@ body {
   height: 16px;
   left: 552px;
   top: 32px;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.02em;
 }
 .maine-nav-contacts {
   position: absolute;
@@ -68,13 +74,6 @@ body {
   height: 16px;
   left: 679px;
   top: 32px;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.02em;
-  color: #212121;
 }
 .poste-addres {
   position: absolute;
@@ -82,13 +81,11 @@ body {
   height: 16px;
   left: 1078px;
   top: 32px;
-  font-family: Roboto;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.02em;
-
   color: #757575;
 }
 .phone-nr {
@@ -97,28 +94,29 @@ body {
   height: 16px;
   left: 1263px;
   top: 32px;
-  font-family: Roboto;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.02em;
-
   color: #757575;
 }
-article {
+/*Mine block informations about us*/
+.mine-block {
   position: absolute;
   width: 1170px;
   height: 1360px;
-  left: 215px;
-  top: 94px;
+  left: 0px;
+  top: 0px;
 }
+/*Button block portfolio*/
 .portfolio {
   width: 611px;
   height: 54px;
   left: 495px;
   top: 174px;
 }
+
 .portfolio-all {
   position: absolute;
   width: 73px;
@@ -165,6 +163,8 @@ article {
   background: #f5f4fa;
   border-radius: 4px;
 }
+/*Section images*/
+
 /*Tehno*/
 .tehno {
   position: absolute;
@@ -180,7 +180,7 @@ article {
   top: 262px;
 }
 
-/*New Orlean*/
+/*New Orlean */
 .new-orlean {
   position: absolute;
   width: 370px;
@@ -324,22 +324,19 @@ footer {
   height: 81px;
   left: 215px;
   top: 111px;
-  font-family: Roboto;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 24px;
-  /* or 171% */
-
   letter-spacing: 0.03em;
   color: #ffffff;
 }
 .footer-addres-link {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
+  position: absolute;
+  left: -40px;
+  top: 10px;
   font-size: 14px;
-  line-height: 24px;
-  letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  color: #757575;
 }
